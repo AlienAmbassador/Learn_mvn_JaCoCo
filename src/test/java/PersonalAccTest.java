@@ -28,6 +28,17 @@ public class PersonalAccTest {
     }
 
     @Test
+    public void test15PercentIncomeLess(){
+        PersonalAcc personalAcc = new PersonalAcc();
+
+        int expected = 0;
+        int actual = personalAcc.tax15PercentFromOdds(300, 500);
+
+        Assertions.assertEquals(expected, actual);
+
+    }
+
+    @Test
     public void addedExpensesTest(){
         PersonalAcc personalAcc = new PersonalAcc();
 
